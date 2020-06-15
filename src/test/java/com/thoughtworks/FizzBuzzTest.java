@@ -60,9 +60,9 @@ public class FizzBuzzTest {
         assertEquals("FizzWhizz", result);
     }
     @Test
-    public void when_givin_35_should_return_BuzzWhizz() {
+    public void when_givin_70_should_return_BuzzWhizz() {
         //given
-        int num = 35;
+        int num = 70;
         //when
         String result = FizzBuzz.fizzBuzz(num);
         //then
@@ -76,5 +76,14 @@ public class FizzBuzzTest {
         String result = FizzBuzz.fizzBuzz(num);
         //then
         assertEquals("FizzBuzzWhizz", result);
+    }
+    @Test
+    public void when_givin_13_should_return_Fizz() {
+        //given
+        int num = 13;
+        //when
+        String result = FizzBuzz.fizzBuzz(num);
+        //then
+        assertEquals("Fizz", result);
     }
 }
