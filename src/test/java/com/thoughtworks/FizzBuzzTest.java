@@ -15,12 +15,21 @@ public class FizzBuzzTest {
         assertEquals("1", result);
     }
     @Test
-    public void when_givin_3_should_return_number_Fizz() {
+    public void when_givin_3_should_return_Fizz() {
         //given
         int num = 3;
         //when
         String result = FizzBuzz.fizzBuzz(num);
         //then
         assertEquals("Fizz", result);
+    }
+    @Test
+    public void when_givin_5_should_return_Buzz() {
+        //given
+        int num = 5;
+        //when
+        String result = FizzBuzz.fizzBuzz(num);
+        //then
+        assertEquals("Buzz", result);
     }
 }
