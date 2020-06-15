@@ -48,7 +48,7 @@ public class FizzBuzzTest {
         //when
         String result = FizzBuzz.fizzBuzz(num);
         //then
-        assertEquals("FizzBuzz", result);
+        assertEquals("Buzz", result);
     }
     @Test
     public void when_givin_21_should_return_FizzWhizz() {
@@ -75,7 +75,7 @@ public class FizzBuzzTest {
         //when
         String result = FizzBuzz.fizzBuzz(num);
         //then
-        assertEquals("FizzBuzzWhizz", result);
+        assertEquals("BuzzWhizz", result);
     }
     @Test
     public void when_givin_13_should_return_Fizz() {
@@ -85,5 +85,23 @@ public class FizzBuzzTest {
         String result = FizzBuzz.fizzBuzz(num);
         //then
         assertEquals("Fizz", result);
+    }
+    @Test
+    public void when_givin_30_should_return_Fizz() {
+        //given
+        int num = 30;
+        //when
+        String result = FizzBuzz.fizzBuzz(num);
+        //then
+        assertEquals("Fizz", result);
+    }
+    @Test
+    public void when_givin_35_should_return_BuzzWhizz() {
+        //given
+        int num = 35;
+        //when
+        String result = FizzBuzz.fizzBuzz(num);
+        //then
+        assertEquals("BuzzWhizz", result);
     }
 }
