@@ -5,11 +5,15 @@ public class FizzBuzz {
         String str = "";
         String str3 = "Fizz";
         String str5 = "Buzz";
+        String str7 = "Whizz";
         if (num % 3 == 0) {
             return str3;
         }
         if (num % 5 == 0) {
             return str5;
+        }
+        if (num % 7 == 0) {
+            return str7;
         }
         return String.valueOf(num);
     }
